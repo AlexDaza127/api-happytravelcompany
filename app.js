@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 
 
 //Inclusión de rutas/servicios/controladores//////////////////////////////////////
+const encuestaApiRouter = require('./routes/api/consultarEncuestas');
 const rolesApiRouter = require('./routes/api/consultarRoles');
 const inmueblesApiRouter = require('./routes/api/consultarInmuebles');
 var indexRouter = require('./routes/index');
@@ -32,6 +33,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/api/rol', rolesApiRouter);
 app.use('/api/inmueble', inmueblesApiRouter);
+app.use('/api/consultarEncuestas', encuestaApiRouter);
 //////////////////////////////////////////////////////
 
 // catch 404 and forward to error handler
