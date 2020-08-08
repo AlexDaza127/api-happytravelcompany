@@ -10,6 +10,7 @@ class ConsultarEncuesta{
             'SELECT * FROM Encuesta'
         )
     }
+
 }
 
 module.exports = ConsultarEncuesta;
